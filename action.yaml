@@ -1,0 +1,5 @@
+name: "Checking Linting with Eslint"
+description: "Check all applicable files for proper linting"
+runs:
+  using: "node20"
+  main: "dist/index.js"
