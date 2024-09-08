@@ -11,7 +11,7 @@ const linting = async () => {
   } catch (err) {
     error(err);
     setFailed(
-      "Your code is not linted correctly. Please format using `npm run eslint` and address the problems"
+      "Your code is not linted correctly. Please format using `npm run eslint` and address the problems",
     );
   }
 };
