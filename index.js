@@ -7,7 +7,7 @@ const linting = async () => {
 
   try {
     const { stdout } = await getExecOutput(
-      "npx eslint . --ext js --ext ts --ext jsx --ext tsx"
+      "npm run eslint"
     );
     info(stdout);
   } catch (err) {
