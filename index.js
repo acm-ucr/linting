@@ -6,14 +6,12 @@ const linting = async () => {
   info(stdout);
 
   try {
-    const { stdout } = await getExecOutput(
-      "npm run eslint"
-    );
+    const { stdout } = await getExecOutput("npm run eslint");
     info(stdout);
   } catch (err) {
     error(err);
     setFailed(
-      "Your code is not linted correctly. Please format using `npm run eslint` or `npx eslint . --ext js --ext ts --ext jsx --ext tsx` and address the problems"
+      "Your code is not linted correctly. Please format using `npm run eslint` and address the problems"
     );
   }
 };
